@@ -10,7 +10,7 @@ arguments % Argument Validation
 
     % variables that tend to vary by experiment
     exp_args.MSO {mustBeInRange(exp_args.MSO,0,100)} = 100; %this maximum stimulator output could be, for example, resting motor threshold
-    exp_args.Scale_Efield_to_Value {mustBeNumeric} = NaN; % NaN = scales to MSO, otherwise to the given value
+    exp_args.Scale_Efield_to_Value {mustBeNumeric} = NaN; % NaN = scales reference E-field to MSO, otherwise to the given value (E-field dosing)
     exp_args.NO_USE_THIS_MAX_DIDT {mustBeNumeric} = NaN;
     exp_args.Efield_display_decimal_places {mustBeInteger, mustBeNonnegative} = 2;
     exp_args.Suppress_Any_Konsole_Input_or_Graphical_Output logical = 1;
